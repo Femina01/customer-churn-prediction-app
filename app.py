@@ -41,6 +41,9 @@ PaymentMethod = st.selectbox(
     ["Electronic check","Mailed check","Bank transfer (automatic)","Credit card (automatic)"]
 )
 
+MonthlyCharges = st.number_input("Monthly Charges")
+TotalCharges = st.number_input("Total Charges")
+
 
 
 input_dict = {
@@ -61,6 +64,8 @@ input_dict = {
     'Contract': Contract,
     'PaperlessBilling': PaperlessBilling,
     'PaymentMethod': PaymentMethod,
+    'MonthlyCharges': MonthlyCharges,
+    'TotalCharges': TotalCharges,
 
 }
 
